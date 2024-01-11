@@ -14,46 +14,52 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-body {
+body, html{
     background-color: var(--cor-escura);
+    height: 100vh;
+    width: 100vw;
 }
 
-div#login {
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--branco);
-    width: 400px;
-    height: 600px;
-    border-radius: 20px;
-    display: block;
-    margin: auto;
-    margin-top: 90px;
+    overflow: hidden;
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+    transition: width 0.5s, height 0.5s;
+    -o-transition-timing-function: ease;
+    transition-delay: 0ms;
 }
 
 div#imagem {
     background-image: url(../imagens/fundo-tela-login1.jpg);
-    height: 200px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 200px;
 }
 
 div#formulario > h1 {
-    font-weight: bolder;
     text-align: center;
     padding-top: 10px;
 }
 
 div#formulario > p {
-    padding: 10px;
     text-align: justify;
+    padding: 10px 10px 10px 10px;
 }
 
-div#conteiner-form {
-    background-color: #000000;
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
