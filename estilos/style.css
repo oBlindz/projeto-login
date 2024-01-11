@@ -63,3 +63,25 @@ div#formulario > p {
     padding: 10px 10px 10px 10px;
 }
 
+div#conteiner-form{
+    position: relative;
+    padding: 0px 10px 0px 10px;
+}
+
+div#campo-login, div#campo-senha {
+    padding: 0px 0px 5px 0px;
+}
+
+div#campo-enviar {
+    position: absolute;
+    transform: translate(-50%);
+    left: 60%;
+    display: inline;
+} 
+
+div#campo-reset {
+    position: absolute;
+    transform: translate(-50%);
+    left: 40%;
+    display: inline;
+}

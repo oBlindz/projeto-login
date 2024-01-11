@@ -16,9 +16,27 @@
             <div id="formulario">
                 <h1>LOGIN</h1>
                 <p>Faça login no nosso site para receber mais notificações!</p>
-                <form action="form.php">
-                    
-                </form>
+                <div id="conteiner-form">
+                    <form action="form.php" method="post">
+                        <div id="campo-login">
+                            <label for="iemail">Login: </label>
+                            <input type="email" name="email" id="iemail" placeholder="Seu e-mail" required size="15" autocomplete="email">
+                        </div>
+
+                        <div id="campo-senha">
+                            <label for="isenha">Senha: </label>
+                            <input type="password" name="senha" id="isenha" placeholder="Senha" required minlength="8" size="10" autocomplete="current-password">
+                        </div>
+
+                        <div id="campo-enviar">
+                            <input type="submit" value="Enviar">
+                        </div>
+
+                        <div id="campo-reset">
+                            <input type="reset" value="Resetar">
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
