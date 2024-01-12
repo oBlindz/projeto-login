@@ -53,6 +53,10 @@ div#imagem {
     height: 200px;
 }
 
+div#conteiner-form {
+    margin: 0px 10px 0px 10px;
+}
+
 div#formulario > h1 {
     text-align: center;
     padding-top: 10px;
@@ -63,25 +67,73 @@ div#formulario > p {
     padding: 10px 10px 10px 10px;
 }
 
-div#conteiner-form{
-    position: relative;
-    padding: 0px 10px 0px 10px;
+form > div#campo-login, div#campo-senha {
+    background-color: var(--cor-quase-clara);
+    width: 100%;
+    height: 50px;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    border-radius: 5px;
+    display: block;
 }
 
-div#campo-login, div#campo-senha {
-    padding: 0px 0px 5px 0px;
+div#campo-login > label, div#campo-senha > label {
+    display: none;
 }
 
-div#campo-enviar {
-    position: absolute;
-    transform: translate(-50%);
-    left: 60%;
-    display: inline;
-} 
+div#campo-login > .material-symbols-outlined, div#campo-senha > .material-symbols-outlined {
+    color: var(--branco);
+    font-size: 1.6em;
+    padding: 7px;
+}
 
-div#campo-reset {
-    position: absolute;
-    transform: translate(-50%);
-    left: 40%;
-    display: inline;
+div#campo-login > input, div#campo-senha > input {
+    border:none;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 50px);
+    border-radius: 5px;
+    transform: translateY(-7px);
+}
+
+form > input[type=password] {
+    margin-top: 5px;
+}
+ 
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor-media);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    cursor: crosshair;
+    margin-bottom: 5px;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--cor-menos-escura);
+    text-decoration: underline;
+    color: var(--branco);
+}
+
+form > input[type=reset] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--branco);
+    color: var(--cor-clara);
+    border: solid 1px var(--cor-clara);
+    border-radius: 5px;
+    cursor: cell;
+    margin-bottom: 5px;
+}
+
+form > input[type=reset]:hover {
+    border: none;
+    color: var(--branco);
+    background-color: var(--cor-escura);
 }
